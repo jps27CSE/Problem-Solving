@@ -11,27 +11,23 @@ For nums[4]=3 there exist three smaller numbers than it (1, 2 and 2).
 
 */
 
-var smallerNumbersThanCurrent = function(nums) {
-    let final = []
-    
-    for(let i=0;i< nums.length;i++)
-        {
-            let count =0
-            let j=0
-            
-            while(j<nums.length)
-                {
-                    if(nums[i] > nums[j])
-                        {
-                            count++
-                            j++
-                        }
-                    else{
-                        j++
-                    }
-                }
-            final.push(count)
-        }
-    
-    return final 
+var smallerNumbersThanCurrent = function (nums) {
+  let final = [];
+
+  for (let i = 0; i < nums.length; i++) {
+    let count = 0;
+    let j = 0;
+
+    while (j < nums.length) {
+      if (nums[i] > nums[j]) {
+        count++;
+        j++;
+      } else {
+        j++;
+      }
+    }
+    final.push(count);
+  }
+
+  return final;
 };
