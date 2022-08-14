@@ -17,6 +17,8 @@ function BinarySearch(array, target) {
 }
 
 let array = [1, 2, 3, 4, 5, 6, 8, 19, 23];
+let array2 = [23, 19, 8, 6, 5, 4, 3, 2, 1];
 let target = 2;
 
 console.log(BinarySearch(array, target));
+console.log(BinarySearch(array2, target));
